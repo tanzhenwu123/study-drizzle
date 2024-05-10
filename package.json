@@ -1,0 +1,27 @@
+{
+  "name": "study-drizzle",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx watch src/main.ts",
+    "init": "drizzle-kit generate:pg",
+    "drop": "drizzle-kit drop",
+    "migrate": "tsx src/drizzle/migrate.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "drizzle-kit": "^0.20.18",
+    "tsx": "^4.7.1",
+    "typescript": "^5.2.2"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.30.10",
+    "pg": "^8.11.5",
+    "postgres": "^3.4.4"
+  }
+}
